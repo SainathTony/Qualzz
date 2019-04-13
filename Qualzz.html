@@ -1,0 +1,173 @@
+<html>
+	<head>
+		<title>Qualzz</title>
+		<link rel="stylesheet" type="text/css" href="Qualz_style.css">
+		<meta charset="utf-8" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style2.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<a class="circle-red" id="yaa"></a>
+				<div class="circle-yellow"></div>
+				<div class="circle-green"></div>
+				<div class="exit-intent">Exit Intent</div>
+				<div class="mini-intent">Minimize</div>
+				<div class="big-intent">Maximize</div>
+				<div id="scroll-c" class="scroll-y">Scroll</div>
+			</div>
+			<div class="main-container" onscroll="myFunction()">
+				<div class="left-container">
+					<div class="box"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="chat friend">
+						<div class="user-photo"></div>
+						<p class="chat-message"></p>
+					</div>
+					<div class="chat self">
+						<div class="user-photo"></div>
+						<p class="chat-message"></p>
+					</div>
+					<div class="chat friend">
+						<div class="user-photo"></div>
+						<p class="chat-message"></p>
+					</div>
+					<div class="chat self">
+						<div class="user-photo"></div>
+						<p class="chat-message"></p>
+					</div>
+					<div class="chat friend">
+						<div class="user-photo"></div>
+						<p class="chat-message"></p>
+					</div>
+					<a href="#" id="popup-link">Click here for PopUp</a>
+					<div class="chat self">
+						<div class="user-photo"></div>
+						<p class="chat-message"></p>
+					</div>
+					<div class="chat friend">
+						<div class="user-photo"></div>
+						<p class="chat-message"></p>
+					</div>
+					<div class="chat self">
+						<div class="user-photo"></div>
+						<p class="chat-message"></p>
+					</div>
+					<div class="chat friend">
+						<div class="user-photo"></div>
+						<p class="chat-message"></p>
+					</div>
+					<div class="chat self">
+						<div class="user-photo"></div>
+						<p class="chat-message"></p>
+					</div>
+					<div class="chat friend">
+						<div class="user-photo"></div>
+						<p class="chat-message"></p>
+					</div>
+					<div class="chat self">
+						<div class="user-photo"></div>
+						<p class="chat-message"></p>
+					</div>
+					<div class="chat friend">
+						<div class="user-photo"></div>
+						<p class="chat-message"></p>
+					</div>
+					<div class="chat self">
+						<div class="user-photo"></div>
+						<p class="chat-message"></p>
+					</div>
+					<div class="chat friend">
+						<div class="user-photo"></div>
+						<p class="chat-message"></p>
+					</div>
+					<div class="chat self">
+						<div class="user-photo"></div>
+						<p class="chat-message"></p>
+					</div>
+				</div>
+				<div class="container2" id="popupslide">
+					<button id="closepop" class="closeme">X</button>
+					<div class="bottom">
+						<input type="text" name="mail" placeholder="Email" class="mail">
+						<div class="email-button">Send</div>
+					</div>
+				</div>
+				<div class="right-container"></div>
+				<div id="popup" class="popup-box">
+					<div class="popup-box-content">
+						<span class="close">×</span>
+					    <div class="popup-content">
+					    	<h1>Stay Update</h1>
+							<h2>Get the latest creative news from our team about art, design and culture.</h2>
+							<div class="popup-footer">
+								<input type="text" name="email" placeholder="Email">
+								<input type="submit" value="SingUp">
+							</div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<style>
+.test {
+  background-color: yellow;
+}
+</style>
+		
+	<script type="text/javascript">
+		$('#closepop').click(function(){
+			$('#popupslide').fadeOut(2000);	
+		})
+		function pop(){
+			$('#popupslide').fadeIn(2000);	
+			
+		}
+
+			setTimeout(pop,10000);
+					//setInterval(pop,5000);
+		
+		//setInterval(popup2,100);
+		var popup_box=document.getElementById('popup');
+		var pop_link=document.getElementById('popup-link');
+		var span = document.getElementsByClassName("close")[0];
+		pop_link.onclick = function() {
+    		popup_box.style.display = "block";
+		}
+		span.onclick = function() {
+		    popup_box.style.display = "none";
+		}
+		window.onclick = function(event) {
+		    if (event.target == popup_box) {
+		        popup_box.style.display = "none";
+		    }
+		}
+		var x = 0;
+		function myFunction(event) {
+		  document.getElementById("scroll-c").style.display="block";
+		  //console.log(document.getElementsByClassName("main-container").scrollTop);
+		  }
+			function ff(){
+				document.getElementById("scroll-c").style.display="none";	
+			}
+			setInterval(ff,100);
+
+			function ff1(){
+				document.getElementById("gaddi").style.display="block";
+				clearInterval(ff);	
+			}
+			setInterval(ff1,5000);
+	</script>
+
+	
+	</body>
+</html>
